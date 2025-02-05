@@ -9,9 +9,8 @@ systemLog:
   logAppend: true
   path: /var/log/mongodb/mongod.log
 
-# Where and how to store data.
 storage:
-  dbPath: /var/lib/mongo
+  dbPath: /var/lib/mongodb
 
 # how the process runs
 processManagement:
