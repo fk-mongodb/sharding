@@ -6,8 +6,9 @@
 # Where and how to store data.
 storage:
   dbPath: /var/lib/mongodb
-#  engine:
-#  wiredTiger:
+  wiredTiger:
+    engineConfig:
+      cacheSizeGB: .1
 
 # where to write logging data.
 systemLog:
@@ -18,7 +19,7 @@ systemLog:
 # network interfaces
 net:
   port: 27017
-  bindIp: 127.0.0.1,172.31.25.131,ip-172-31-25-131.ap-southeast-1.compute.internal
+  bindIp: 127.0.0.1,10.0.2.22,ip-10-0-2-22.ap-southeast-1.compute.internal
 
 # how the process runs
 processManagement:
@@ -30,9 +31,10 @@ security:
 #operationProfiling:
 
 replication:
-  replSetName: "fk0"
-#sharding:
+  replSetName: fk-repl
 
+sharding:
+  clusterRole: shardsvr
 ## Enterprise-Only Options:
 
 #auditLog:
