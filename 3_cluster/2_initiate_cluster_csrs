@@ -1,5 +1,5 @@
 rs.initiate({
-  _id: "fk0",
+  _id: "fk-csrs",
   members: [{
       _id: 0,
       host: "ip-10-0-2-5.ap-southeast-1.compute.internal:27017"
