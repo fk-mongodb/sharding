@@ -1,0 +1,16 @@
+rs.initiate({
+  _id: "fk-secondrepl",
+  members: [{
+      _id: 0,
+      host: "ip-10-0-2-250.ap-southeast-1.compute.internal:27017"
+    },
+    {
+      _id: 1,
+      host: "ip-10-0-2-37.ap-southeast-1.compute.internal:27017"
+    },
+    {
+      _id: 2,
+      host: "ip-10-0-2-102.ap-southeast-1.compute.internal:27017"
+    }
+  ]
+})
