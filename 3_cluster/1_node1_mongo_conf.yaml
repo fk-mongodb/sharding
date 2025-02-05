@@ -6,9 +6,9 @@
 # Where and how to store data.
 storage:
   dbPath: /var/lib/mongodb
-  wiredTiger:
-    engineConfig:
-      cacheSizeGB: .1
+  # wiredTiger:
+  #   engineConfig:
+  #     cacheSizeGB: .1
 
 # where to write logging data.
 systemLog:
